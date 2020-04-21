@@ -19,7 +19,11 @@ canvas {
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162994174-1"></script>
 <script>
 if (screen.width <= 699) {
-document.location = "mobile.html";
+document.location = "https://covidchart.github.io/mobile.html";
+}
+
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("https://covidchart.github.io/mobile.html");
 }
 
   window.dataLayer = window.dataLayer || [];
