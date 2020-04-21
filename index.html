@@ -36,7 +36,6 @@ canvas {
 <div id="lastupdated" style="margin-left:20px;color: rgba(0,0,0,.5);"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<script> 
 $("#lastupdated").text("Last updated  ");
 $("#lastupdated").append(moment().format('MMMM Do YYYY'));
-
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  // some code..
  $("#lastupdated").append("best viewed in desktop browser");
@@ -61,23 +60,14 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 </div>
 <script>
 
-
 $(document).ready(function(){
-
 	var ctx = document.getElementById('canvas').getContext('2d');
-    
 	Chart.Legend.prototype.afterFit = function() {
 		this.height = this.height + 20;
 	};
 	window.myLine = new Chart(ctx, config);
 });
-
-	
 </script>
-
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sainath" data-description="" data-message="Thank you for visiting. If you like it buy me a coffee!" data-color="#FF813F" data-position="left" data-x_margin="18" data-y_margin="18"></script>
-
-
-
 </body>
 </html>
